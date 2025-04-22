@@ -1,0 +1,27 @@
+#botao {
+    background-color: rgb(200, 25, 25);
+    color: white;
+    padding: 50px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    transition: background-color 0.3s ease;
+}
+
+#botao:hover {
+    background-color: rgb(126, 17, 17);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('imagem.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    place-items: center;
+    background-position: 10% 70%;
+}
