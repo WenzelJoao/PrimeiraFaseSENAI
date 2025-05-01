@@ -1,0 +1,56 @@
+.Lista1{
+    background-color: rgb(51, 72, 230);
+    width: 400px;
+    height: auto;
+    padding: 5px; 
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 10px;
+    margin: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 6px;
+    
+    
+    
+
+}
+#Corpo{
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(23, 7, 118);
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+    overflow: hidden;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px;
+
+
+}
+
+button{
+    background-color: rgb(68, 215, 228);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-size: 20px;
+    box-shadow: 5px 5px 6px black;
+    
+}
+button:hover {
+        background-color: rgb(126, 17, 17);
+    }
+h1{
+    text-align: center;
+    
+    border-radius: 10px;
+    background-color: rgb(126, 107, 234);
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+    overflow: hidden;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px;
+    
+}
