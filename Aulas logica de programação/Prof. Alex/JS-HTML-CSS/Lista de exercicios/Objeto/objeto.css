@@ -1,0 +1,181 @@
+body {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* opcional, para centralizar */
+    padding: 20px;
+}
+
+.grid-container>div {
+    flex: 1 1 calc(33.333% - 40px);
+    /* 3 por linha com espaçamento */
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+
+.conteiner-produto {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.livro-container {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.container-temperatura {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.container-agendaContatos {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.container-notaAluno {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-carrinhoCompra {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-aprovados {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-conversor {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-conversor input {
+    margin: 2.5px;
+}
+
+.conteiner-banco {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-votacao {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-agenda {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-ficha {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-validador {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-projetos {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}
+
+.conteiner-dados {
+    margin-top: 20px;
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    width: 300px;
+    text-align: center;
+}

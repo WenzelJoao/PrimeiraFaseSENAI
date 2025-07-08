@@ -1,0 +1,59 @@
+.conteiner_principal {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center
+}
+
+.botao_cadastro {
+    background-color: blueviolet;
+    border: none;
+    border-radius: 20px;
+    max-height: 50px;
+    cursor: pointer;
+}
+
+.conteudo_lista {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+
+}
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.editar{
+    cursor: pointer;
+}
+.deletar{
+    cursor: pointer;
+}
+.conteudo_cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.conteiner_cadastro{
+    display: none;
+    flex-direction: column;
+}
+.voltar{
+    cursor: pointer;
+}

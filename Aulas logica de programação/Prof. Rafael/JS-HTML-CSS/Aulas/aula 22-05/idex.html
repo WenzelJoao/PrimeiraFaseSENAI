@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Telas</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <button onclick="mostrarLogin()">Login</button>
+        <button onclick="mostrarCadastro()">Cadastro</button>
+        <button onclick="mostrarProdutos()">Produtos</button>
+    </nav>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <div class="conteinerInput">
+                <label for="nome">Nome</label>
+                <input id="inpLogNome" type="text">
+            </div>
+            <br>
+            <div class="conteinerInput">
+                <label for="senha">Senha</label>
+                <input id="inpLogSenha" type="password">
+            </div>
+            <div id="naoposCadastro">
+                <h4 id="semCadastro" onclick="mostrarCadastro()">Não possui cadastro?</h4>
+            </div>
+            <br>
+            <div class="conteinerBotao">
+                <button onclick="logar()">Logar</button>
+            </div>
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastro</h2>
+            <div class="conteinerInput">
+                <label for="nomeCompleto">Nome completo</label>
+                <input id="inpCadNome" type="text">
+            </div>
+            <br>
+            <div class="conteinerInput">
+                <label for="e-mail">e-mail</label>
+                <input id="inpCadEmail" type="email">
+            </div>
+            <br>
+            <div class="conteinerInput">
+                <label for="senha">Senha</label>
+                <div id="botaoSenha"><input type="password" id="inpCadSenha"></div>
+                <!-- <div id="flagpassword"><input type="checkbox" onclick="senha.type = this.checked ? 'text' : 'password'"></div> -->
+                <h4 id="possuicadastro" onclick="mostrarLogin()">Já tenho cadastro!</h4>
+            </div>
+            <br>
+            <!-- <div class="conteinerdatanascimento">
+            <label for="dataNacimento">Data de nascimento</label>
+            <input id="inpCadData" type="date">
+        </div> -->
+            <br>
+            <div class="conteinerBotao">
+                <button onclick="cadastrar()">Cadastre-se</button>
+            </div>
+
+
+        </section>
+
+        <section id="produtos">
+            <h2>Produtos</h2>
+
+        </section>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

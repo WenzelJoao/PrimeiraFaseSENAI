@@ -1,0 +1,15 @@
+.BackgroundAndBackground{
+    /* background-color: brown; */
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+body {
+    text-align: center;
+    background-image: url(image/galaxy.avif);
+    background-repeat: no-repeat;
+  }
+  li{
+    margin-top: 15px;
+  }
+

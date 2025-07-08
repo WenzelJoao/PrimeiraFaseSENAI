@@ -191,52 +191,52 @@ function L2E2() {
 
     let signo = prompt("Digite seu signo com as opções abaixo:\nAries = 0\nTouro = 1 \nGêmeos = 2\nCâncer = 3\nLeão = 4\nVirgem= 5\nLibra = 6\nEscorpião = 7 \nSagitário = 8\nCapricórnio = 9\nAquário = 10\nPeixes = 11");
 
-if (signo === null || signo.trim() === "") {
-  alert("Você não digitou nada!");
-} else {
-  let numeroSigno = Number(signo);
+    if (signo === null || signo.trim() === "") {
+        alert("Você não digitou nada!");
+    } else {
+        let numeroSigno = Number(signo);
 
-  switch (numeroSigno) {
-    case 0:
-      alert("A energia está alta para novos projetos, mas controle a impulsividade.");
-      break;
-    case 1:
-      alert("Estabilidade e conforto em foco. Bom momento para cuidar das finanças e prazeres simples.");
-      break;
-    case 2:
-      alert("Comunicação fluida e ideias borbulhantes. Conexões sociais em destaque.");
-      break;
-    case 3:
-      alert("Intuição forte e necessidade de nutrir o lar e as emoções.");
-      break;
-    case 4:
-      alert("Confiança e brilho pessoal em alta. Busque o reconhecimento, mas com humildade.");
-      break;
-    case 5:
-      alert("Foco nos detalhes e organização. Produtividade em destaque, mas evite a autocrítica excessiva.");
-      break;
-    case 6:
-      alert("Harmonia e equilíbrio nos relacionamentos. Busque a justiça e a beleza ao seu redor.");
-      break;
-    case 7:
-      alert("Intensidade emocional e transformações profundas. Poder de regeneração em evidência.");
-      break;
-    case 8:
-      alert(" Aventura e expansão de horizontes. Busque novos aprendizados e experiências.");
-      break;
-    case 9:
-      alert("Disciplina e ambição para alcançar seus objetivos de longo prazo.");
-      break;
-    case 10:
-      alert("Inovação e originalidade em destaque. Conexões com grupos e causas sociais importantes.");
-      break;
-    case 11:
-      alert("Sensibilidade e empatia afloradas. Conecte-se com sua espiritualidade e intuição.");
-      break;
-    default:
-      alert("Você não digitou nenhum número válido!");
-  }
-}
+        switch (numeroSigno) {
+            case 0:
+                alert("A energia está alta para novos projetos, mas controle a impulsividade.");
+                break;
+            case 1:
+                alert("Estabilidade e conforto em foco. Bom momento para cuidar das finanças e prazeres simples.");
+                break;
+            case 2:
+                alert("Comunicação fluida e ideias borbulhantes. Conexões sociais em destaque.");
+                break;
+            case 3:
+                alert("Intuição forte e necessidade de nutrir o lar e as emoções.");
+                break;
+            case 4:
+                alert("Confiança e brilho pessoal em alta. Busque o reconhecimento, mas com humildade.");
+                break;
+            case 5:
+                alert("Foco nos detalhes e organização. Produtividade em destaque, mas evite a autocrítica excessiva.");
+                break;
+            case 6:
+                alert("Harmonia e equilíbrio nos relacionamentos. Busque a justiça e a beleza ao seu redor.");
+                break;
+            case 7:
+                alert("Intensidade emocional e transformações profundas. Poder de regeneração em evidência.");
+                break;
+            case 8:
+                alert(" Aventura e expansão de horizontes. Busque novos aprendizados e experiências.");
+                break;
+            case 9:
+                alert("Disciplina e ambição para alcançar seus objetivos de longo prazo.");
+                break;
+            case 10:
+                alert("Inovação e originalidade em destaque. Conexões com grupos e causas sociais importantes.");
+                break;
+            case 11:
+                alert("Sensibilidade e empatia afloradas. Conecte-se com sua espiritualidade e intuição.");
+                break;
+            default:
+                alert("Você não digitou nenhum número válido!");
+        }
+    }
 }
 function L2E3() {
     // Jogo do Par ou Ímpar
@@ -250,26 +250,84 @@ function L2E3() {
     let soma = numero + numeroAleatorio
     let resultado
 
-    if (soma % 2 === 0 ) {
+    if (soma % 2 === 0) {
 
         resultado = "par"
     }
-    else{
+    else {
         resultado = "impar"
     }
 
-alert(`O computador escolheu ${numeroAleatorio}`)
-alert(`A soma é: ${soma} (${resultado})`)
+    alert(`O computador escolheu ${numeroAleatorio}`)
+    alert(`A soma é: ${soma} (${resultado})`)
 
-if(parImpar === resultado.toLowerCase()){
-    alert("Você ganhou!")
-}
-else{
-    alert("Você perdeu!")
-}
+    if (parImpar === resultado.toLowerCase()) {
+        alert("Você ganhou!")
+    }
+    else {
+        alert("Você perdeu!")
+    }
 
 
 }
+function L2E4() {
+    //     Contador de Cliques por Segundo
+    // Descrição: Conta quantos cliques o usuário deu.
+    // Entradas: Cliques em botão.
+    // Exemplo de Saída: “Você clicou 32 vezes!” Ao clicar no botão de resultado.
+    
+   alert("Clique em sequencia no contador\ne vejá quantos cliques você deu!")
+    
+}
+
+let cliques = 0
+function L2E4Botao() {
+    cliques++
+    console.log(cliques)
+    document.getElementById("click").textContent = cliques;
+    
+}
+
+
+function L2E5() {
+    //     Jogo do Número Secreto
+    // Descrição: Usuário tenta adivinhar um número aleatório de 1 a 100.
+    // Entradas: Número digitado.
+    // Exemplo de Saída: “Tente novamente.”
+
+    let max = 100
+    let min = 1
+    const numeroAleatorio = Math.round(Math.random() * (max - min) + min)
+    console.log(numeroAleatorio)
+    let contador = 1
+
+    let numDig = Number(prompt(`Digite um valor entre ${min} e ${max}:`))
+    console.log(`Contador1: ${contador}`)
+    
+    if (numeroAleatorio == numDig) {
+        alert(`TU É MUITO BOM!!!
+            ACERTOU NA PRIMEIRA`)
+        }
+        else if (numeroAleatorio != numDig) {
+
+        while (numeroAleatorio != numDig && contador != 5) {
+            numDig = Number(prompt(`ok... vou te dar mais 
+                    ${5 - contador} tentativas`))
+            contador++
+            console.log(`contador2: ${contador}`)
+        }
+        if (numeroAleatorio == numDig) {
+            alert(`Boaa você acertou!!`)
+        }
+        else {
+            alert("Gamer over")
+        }
+        contador = 1
+    }
+    
+    
+}
+
 
 function gerarCaractereAleatorio() {
     //     Gerador de Senhas Aleatórias
@@ -282,6 +340,8 @@ function gerarCaractereAleatorio() {
 
     return caracteres.charAt(numeroAleatorio)
 }
+
+
 function L2E6() {
     let quantidade = Number(prompt("Informe quantos caracteres sua senha deve ter - de 1 a 10"))
     let senha = ''
@@ -291,3 +351,97 @@ function L2E6() {
     }
     alert(`A senha é ${senha}`)
 }
+
+function L2E7() {
+
+    let pergunta = [`1) Qual o nome da primeira Constituição do Brasil?
+    a) Carta Magna            b) Constituição Imperial de 1824
+    c) Constituição da República de 1891   
+    d) Constituição Cidadã de 1988
+
+Digite apenas a letra da resposta:`,
+`2) Quem escreveu a peça teatral 'Romeu e Julieta?
+    a) William Shakespeare        b) Jane Austen
+    c) Charles Dickens     d) Oscar Wilde
+
+Digite apenas a letra da resposta:`,
+`3) Qual a linguagem de programação mais usada para desenvolvimento web front-end?
+    a) Python                b) Java
+    c) JavaScript            d) C#
+
+Digite apenas a letra da resposta:`]
+
+    let num = 0
+    let alt
+    let resp = []
+   
+        while (num <= 2) {
+            alt = prompt(pergunta[num])
+            if (pergunta[0] && alt == `b` || pergunta[1] && alt == `a` || pergunta[2] && alt == `c`) {
+                alt = 1
+            } else {
+                alt = 0
+            }
+            resp.push(alt)            
+            num++
+        }
+      
+    let ttl = resp[0] + resp[1] + resp[2]
+    alert(`Você acertou ${ttl} de 03`)
+}
+
+function L2E8(){
+// Simulador de Sorte do Dia
+// Descrição: Exibe uma mensagem motivacional aleatória.
+// Entradas: Clique em botão.
+// Exemplo de Saída: “Hoje é um ótimo dia para começar algo novo.”
+
+let max = 6
+let min = 1
+let numero_aleatorio = Math.floor(Math.random() * (max - min) + min)
+console.log(numero_aleatorio);
+
+switch(numero_aleatorio){
+    case(1): alert("Cada novo dia é uma chance de recomeçar e fazer diferente. Aproveite!")
+    break
+    case(2): alert("Não espere pelas condições perfeitas para agir. A ação cria o caminho.")
+    break
+    case(3): alert("Seus sonhos merecem sua persistência e dedicação. Não desista!")
+    break
+    case(4):alert("Os obstáculos são apenas degraus para te levar mais alto. Use-os com sabedoria.")
+    break
+    case(5): alert("Acredite no seu potencial. Você é mais forte e capaz do que imagina.")
+    break
+    case(6):
+    break
+    
+}
+
+}
+function L2E9(){
+//     Decisômetro (Sim/Não/Talvez)
+// Descrição: Responde aleatoriamente com “Sim”, “Não” ou “Talvez”.
+// Entradas: Clique em botão.
+// Exemplo de Saída: “Talvez”
+
+let max = 4
+let min = 1
+let numero_aleatorio = Math.floor(Math.random() * (max - min) + min)
+console.log(numero_aleatorio);
+
+
+
+switch(numero_aleatorio){
+    case(1): alert("Sim!")
+    break
+    case(2): alert("Não!")
+    break
+    case(3): alert("Talvez!")
+    break
+    case(4):
+    break 
+
+}
+}
+
+

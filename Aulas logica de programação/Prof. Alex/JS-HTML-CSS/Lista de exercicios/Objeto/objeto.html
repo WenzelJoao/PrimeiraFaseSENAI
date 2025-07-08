@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="objeto.css">
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <!--  1. Catálogo de Produtos -->
+
+    <div class="conteiner-produto">
+      <h2>Catálogo de Produtos</h2>
+
+      <input type="text" id="nomeProduto" placeholder="Digite o nome do produto">
+      <button onclick="buscarProduto()">Buscar</button>
+
+      <p id="resultado"></p>
+    </div>
+
+    <!-- 2. Sistema de Biblioteca -->
+    <div class="livro-container">
+      <h2>Livro: Moby Dick</h2>
+      <p>Autor: Herman Melville</p>
+      <p id="status">Status: Disponível</p>
+      <button onclick="emprestar()">Emprestar</button>
+      <button onclick="devolver()">Devolver</button>
+    </div>
+
+    <!-- 3. Conversor de Temperatura -->
+
+    <div class="container-temperatura">
+      <h2>Conversor de Temperatura</h2>
+
+      <input type="number" id="inputC" placeholder="Digite Celsius">
+      <br>
+      <button onclick="converterParaFahrenheit()">Converter para °F</button>
+      <p id="resultadoF"></p>
+      <input type="number" id="inputF" placeholder="Digite Fahrenheit">
+      <br>
+      <button onclick="converterParaCelsius()">Converter para °C</button>
+      <p id="resultadoC"></p>
+    </div>
+
+    <!-- 4. Agenda de Contatos -->
+
+    <div class="container-agendaContatos">
+      <h2>Agenda de Contatos</h2>
+
+      <input type="text" id="nomeContato" placeholder="Nome para adicionar">
+      <button onclick="adicionarContato(agendaContatos)">Adicionar</button><br>
+
+      <input type="text" id="nomeRemover" placeholder="Nome para remover">
+      <button onclick="removerContato(agendaContatos)">Remover</button><br>
+
+      <button onclick="listarContatos(agendaContatos)">Listar Contatos</button>
+
+      <ul id="listaContatos"></ul>
+    </div>
+
+    <!-- 5. Relatório de Notas -->
+
+    <div class="container-notaAluno">
+      <h2>Relatório de Notas</h2>
+      <button onclick="mostrarMedia()">Calcular Média</button>
+      <p id="resultado2">Resultado aparecerá aqui</p>
+    </div>
+
+
+    <!-- 6. Carrinho de Compras -->
+
+    <div class="conteiner-carrinhoCompra">
+      <h2>Carrinho de Compras</h2>
+
+      <input type="text" id="nomeItem" placeholder="Nome do item">
+      <input type="number" id="quantidadeItem" placeholder="Quantidade">
+      <input type="number" id="valorItem" placeholder="Valor unitário"><br>
+
+      <button onclick="adicionarItem()">Adicionar Item</button>
+      <button onclick="removerItem()">Remover Item</button>
+      <button onclick="mostrarTotal()">Calcular Total</button>
+
+      <p id="resultado1"></p>
+      <ul id="listaItens"></ul>
+
+    </div>
+
+    <!-- 7. Filtrar Alunos Aprovados -->
+
+    <div class="conteiner-aprovados">
+      <h1>Lista de Alunos</h1>
+
+      <p>Aprovados com média acima de 6:</p>
+      <button onclick="mostrarAprovados()">Mostrar Aprovados</button>
+
+      <ul id="listaAprovados"></ul>
+    </div>
+
+    <!-- 8. Conversor de Moedas com Objeto -->
+    <div class="conteiner-conversor">
+
+      <h2>Conversor de Moedas</h2>
+
+      <input type="number" id="valor" placeholder="Valor"><br>
+      <input type="text" id="de" placeholder="De (ex: USD)">
+      <input type="text" id="para" placeholder="Para (ex: BRL)"><br>
+      <button onclick="converterMoeda()">Converter</button>
+
+      <p id="resultado-conversor"></p>
+
+    </div>
+
+    <!-- 1. Banco com Múltiplas Contas -->
+
+ <div class="conteiner-banco">
+    <p><strong>João:</strong> R$ <span id="saldoJoao">1000</span></p>
+    <button onclick="depositar('Joao', 100)">Depositar R$100</button>
+    <button onclick="sacar('Joao', 50)">Sacar R$50</button>
+    
+    <p><strong>Maria:</strong> R$ <span id="saldoMaria">500</span></p>
+    <button onclick="depositar('Maria', 100)">Depositar R$100</button>
+    <button onclick="sacar('Maria', 50)">Sacar R$50</button>
+    <h3>Saldo total do banco: R$ <span id="saldoTotal">1500</span></h3>
+  </div>
+
+  <!-- 2. Sistema de Votação -->
+
+<div class="conteiner-votacao">
+  <h1>Votação</h1>
+
+  <p>Clique para votar no candidato:</p>
+  <button onclick="votos.votar('João'); atualizar()">João</button>
+  <button onclick="votos.votar('Maria'); atualizar()">Maria</button>
+  <button onclick="votos.votar('Carlos'); atualizar()">Carlos</button>
+
+  <h2>Votos atuais:</h2>
+  <ul id="lista-votos">
+  </ul>
+
+  <h3>Mais votado: <span id="mais-votado">Nenhum ainda</span></h3>
+</div>
+
+<!-- 3. Agenda Semanal de Compromissos -->
+
+<div class="conteiner-agenda">
+    <h1>Agenda</h1>
+
+  <label>Dia:
+    <select id="dia">
+      <option value="segunda">Segunda</option>
+      <option value="terca">Terça</option>
+      <option value="quarta">Quarta</option>
+      <option value="quinta">Quinta</option>
+      <option value="sexta">Sexta</option>
+      <option value="sabado">Sábado</option>
+      <option value="domingo">Domingo</option>
+    </select>
+  </label>
+
+  <label>Compromisso:
+    <input type="text" id="compromisso" />
+  </label>
+
+  <button onclick="adicionar()">Adicionar</button>
+  <button onclick="remover()">Remover</button>
+
+  <ul id="lista"></ul>
+</div>
+
+  <!-- 4. Gerador de Fichas de RPG -->
+<div class="conteiner-ficha">
+    <h1>Criar Personagem</h1>
+
+  <input type="text" id="nome" placeholder="Nome do personagem">
+  <button onclick="criar()">Criar</button>
+
+  <h2>Personagens Criados:</h2>
+  <ul id="personagem"></ul>
+</div>
+
+  <!-- 5. Validador de Formulário com Objeto -->
+
+  <div class="conteiner-validador">
+      <h1>Validação</h1>
+
+  <input type="text" id="nomeValidacao" placeholder="Nome"><br>
+  <input type="text" id="email" placeholder="Email"><br>
+  <input type="number" id="idade" placeholder="Idade"><br><br>
+
+  <button onclick="validar()">Validar</button>
+
+  <p id="mensagem"></p>
+  </div>
+
+  <!-- 6. Sistema de Gestão de Projetos -->
+
+  <div class="conteiner-projetos">
+
+    <h2>Projeto: Meu Projeto</h2>
+
+  <label for="filtro">Filtrar por status:</label>
+  <select id="filtro" onchange="mostrarTarefas()">
+    <option value="">Todos</option>
+    <option value="pendente">Pendente</option>
+    <option value="em andamento">Em andamento</option>
+    <option value="concluída">Concluída</option>
+  </select>
+
+  <ul id="listaTarefas"></ul>
+</div>
+
+  <!-- 7. Simulador de Jogo de Dados -->
+
+  <div class="conteiner-dados">
+      <h1>🎲 Jogo de Dados</h1>
+
+  <button onclick="jogoDeDados.rolarDados()">Rolar Dados</button>
+  <button onclick="jogoDeDados.mostrarHistorico()">Mostrar Histórico</button>
+
+  <br><br>
+  <label for="numero">Contar número:</label>
+  <input type="number" id="numero" min="1" max="6">
+  <button onclick="contarNumero()">Contar</button>
+
+  <h3 id="resultadoDados"></h3>
+  <h3 id="historico"></h3>
+  </div>
+
+
+
+  </div>
+
+  
+  <script src="objeto.js"></script>
+</body>
+
+</html>
